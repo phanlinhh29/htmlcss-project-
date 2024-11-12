@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #FFB900;
+    --font-heading: Sen, sans-serif;
+}
+
 html {
     font-size: 62.5%
 }
@@ -24,9 +29,13 @@ a {
     color: #FFF;
     text-align: center;
     font-size: 1.6rem;
-    border-radius: 24.5px;
+    border-radius: 999px;
     background: #171100;
     /* 175% */
+}
+
+.btn:hover {
+    opacity: 0.9
 }
 
 .main-content {
@@ -44,6 +53,7 @@ a {
 .header.fixed {
     position: sticky;
     top: -28px;
+    z-index: 1;
 
 }
 
@@ -96,4 +106,229 @@ a {
 
 .header .action {
     margin-left: 49px;
+}
+
+.hero {
+    padding: 56px 0 65px;
+    background: #FFFCF4;
+}
+
+.hero .body {
+
+    display: flex;
+}
+
+.hero .media-block {
+    position: relative;
+    width: 48%;
+}
+
+
+
+.hero .media-block .img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 1.25rem;
+}
+
+.hero-sumary {
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    padding: 24px;
+    border-radius: 0.75rem;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    Width: 270px;
+
+}
+
+.hero-sumary .item {
+    display: flex;
+    align-items: center;
+
+}
+
+.hero-sumary .item+.item {
+    margin-top: 22px;
+}
+
+.hero-sumary .icon {
+
+    width: 48px;
+    height: 48px;
+    background-color: #FFF9E8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero-sumary .item:nth-of-type(2) .icon {
+    background-color: #FCEFFF;
+    ;
+}
+
+.hero-sumary .item:nth-of-type(3) .icon {
+    background-color: #EBEAFF;
+}
+
+.hero-sumary .info {
+    margin-left: 16px;
+}
+
+.hero-sumary .label {
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+
+.hero-sumary .title {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.hero .content-block {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+
+.heading {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -1.16px;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 6.8rem;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 4.8rem
+}
+
+.desc {
+
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem
+}
+
+.desc.lv1 {
+    margin-top: 22px;
+}
+
+.desc.lv2 {
+    margin-top: 16px;
+    width: 458px;
+
+
+}
+
+.hero .cta-group {
+    display: flex;
+    align-items: center;
+    margin: 38px 0 48px;
+}
+
+.hero-cta {
+    min-width: 180px;
+    line-height: 64px;
+    background: var(--primary-color);
+}
+
+.hero .watch-video {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.hero .watch-video .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: red;
+
+}
+
+
+.hero .watch-video span {
+    margin-left: 14px;
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+}
+
+.hero .stats {
+    margin-top: 8px;
+}
+
+.hero .stats strong {
+    padding-right: 8px;
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 5.4rem;
+}
+
+.hero .stats .number {
+    margin-left: 28px;
+}
+
+
+/* popular*/
+.popular {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.popular-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-top .control {
+    display: flex;
+    gap: 18px;
+}
+
+.popular-top .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+}
+
+.popular-top .control-btn:hover {
+    color: #fff;
+    background: var(--primary-color);
+    cursor: pointer;
 }
