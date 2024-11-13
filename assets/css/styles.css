@@ -244,7 +244,6 @@ a {
 
 
 
-
 .desc.lv2 {
     margin-top: 16px;
     width: 458px;
@@ -430,4 +429,83 @@ a {
 .popular .course-item .book-btn:hover {
     color: #fff;
     background: var(--primary-color);
+}
+
+/* feedback*/
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2E2100;
+}
+
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+
+}
+
+.feedback-item {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .info .title {
+    font-family: var(--font-heading);
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.4rem;
+}
+
+.feedback-item .info .desc {
+    margin-top: 4px;
+    color: #BFBCB2;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+
+.feedback .dots {
+    display: flex;
+    margin-top: 28px;
+}
+
+.feedback .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 6px;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feedback-item .dot.active {
+    background: #FFB900;
+    cursor: default;
+}
+
+.feedback-item .content {
+    width: 66%;
+    margin-left: auto;
+}
+
+.feedback-item blockquote {
+    margin-left: 30px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.625rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 2.5rem;
 }
