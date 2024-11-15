@@ -233,6 +233,8 @@ c .btn:hover {
     line-height: 4.8rem
 }
 
+
+
 .desc {
 
     color: #5F5B53;
@@ -697,4 +699,81 @@ c .btn:hover {
 .blog .dot.active {
     cursor: default;
     background: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    padding: 96px 135px 0;
+    background: #2E2100;
+}
+
+.footer .row {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554B;
+}
+
+.footer .row .columnm {
+    width: 21.6%;
+}
+
+.footer .row .columnm:first-child {
+    width: 35%;
+}
+
+.footer .desc {
+    margin-top: 18px;
+    max-width: 267px;
+    color: #BFBCB2;
+    font-size: 0.875rem;
+    line-height: 1.625rem
+}
+
+.footer .social {
+    display: flex;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.footer .title {
+    display: inline-block;
+    border-bottom: 1px solid #59554B;
+    padding: 0 48px 14px 0;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.8rem
+}
+
+.footer .list {
+    margin-top: 28px;
+}
+
+.footer .list a {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #BFBCB2;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+
+}
+
+.footer .list li:last-child a {
+    margin-bottom: 0;
+}
+
+.footer .list strong {
+    color: #FFF;
+    font-weight: 600;
+}
+
+.footer .copyright {
+    padding: 28px 0;
+}
+
+.footer .copyright p {
+    color: #807D74;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
 }
